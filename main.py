@@ -7,6 +7,6 @@ if __name__ == "__main__":
     amazonBooker = AmazonBooker()
     tweeter = Tweeter()
 
-    for tweet in tweeter.get_tweets_from_hashtag("#books"):
-        print(tweet.user.screen_name)
+    tweeter.create_stream()
+    tweeter.track_stream('books')
 

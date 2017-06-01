@@ -2,11 +2,14 @@
 import tweepy
 
 from . import twitterConfig
+from . import bookListener
 
 class Tweeter:
     def __init__(self):
         self.auth = self._authenticate()
         self.api = tweepy.API(self.auth)
+
+        self.bookStream = None
     
     # Authenticate the Twitter Client
     def _authenticate(self):
@@ -29,3 +32,14 @@ class Tweeter:
     # Return a List of Tweets for a given hash tag
     def get_tweets_from_hashtag(self, hashtag, limit=None):
         return tweepy.Cursor(self.api.search, q=hashtag).items()
+
+    # Create and Return a Stream
+    def create_stream(self):
+        bookStreamListener = bookListener.BookListener()
+        self.bookStream = tweepy.Stream(auth=self.api.auth, listener=bookStreamListener)
+    
+    # Track which Hastag
+    def track_stream(self, tag):
+
+        self.bookStream.filter(track=[tag])
+        
