@@ -34,12 +34,13 @@ class Tweeter:
         return tweepy.Cursor(self.api.search, q=hashtag).items()
 
     # Create and Return a Stream
-    def create_stream(self):
+    def create_stream(self, cb):
         bookStreamListener = bookListener.BookListener()
+        bookStreamListener.status_callback(cb)
         self.bookStream = tweepy.Stream(auth=self.api.auth, listener=bookStreamListener)
     
     # Track which Hastag
     def track_stream(self, tag):
 
-        self.bookStream.filter(track=[tag])
+        self.bookStream.filter(track=[tag], async=True)
         
