@@ -1,1 +1,4 @@
 amazonTwitter/
+
+# Don't Check in Credentials
+config.py
