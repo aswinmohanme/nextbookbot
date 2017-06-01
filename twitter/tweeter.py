@@ -41,6 +41,5 @@ class Tweeter:
     
     # Track which Hastag
     def track_stream(self, tag):
-
-        self.bookStream.filter(track=[tag], async=True)
-        
+        self.bookStream.filter(track=[tag])
+       
