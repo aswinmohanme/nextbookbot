@@ -25,3 +25,7 @@ class Tweeter:
             return None
 
         self.api.update_status(status)
+    
+    # Return a List of Tweets for a given hash tag
+    def get_tweets_from_hashtag(self, hashtag, limit=None):
+        return tweepy.Cursor(self.api.search, q=hashtag).items()
