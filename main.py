@@ -1,3 +1,5 @@
+import RAKE
+import amazon
 
 from amazonBooker import AmazonBooker
 from twitter.tweeter import Tweeter
@@ -7,12 +9,17 @@ from twitter.tweeter import Tweeter
 if __name__ == "__main__":
     amazonBooker = AmazonBooker()
     tweeter = Tweeter()
+    Rake = RAKE.Rake('smartStop.txt')
 
     # Main Function CallBack
     def process_status(status):
-        if status.lang == "en":
-            with open('tweet.txt', 'a') as f:
-                f.write(status.text + '\n')
+        try:
+            if status.lang == "en":
+                keywords = Rake.run(status.text.replace('#', ''))
+                book = amazonBooker.get_book_by_keywords(' or '.join([x[0] for x in keywords[:3]]))
+                print(book.offer_url)
+        except amazon.api.SearchException:
+            pass
 
     tweeter.create_stream(process_status)
     tweeter.track_stream(['books'])

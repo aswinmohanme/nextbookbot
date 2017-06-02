@@ -3208,6 +3208,7 @@ TextIOBase	../amazonTwitter/lib/python3.5/io.py	/^class TextIOBase(_io._TextIOBa
 TextIOBase	../amazonTwitter/lib64/python3.5/io.py	/^class TextIOBase(_io._TextIOBase, IOBase):$/;"	kind:class	line:81
 TextIOWrapper	../amazonTwitter/lib/python3.5/tokenize.py	/^from io import TextIOWrapper$/;"	kind:namespace	line:30
 TextIOWrapper	../amazonTwitter/lib64/python3.5/tokenize.py	/^from io import TextIOWrapper$/;"	kind:namespace	line:30
+TfIdf	../tfidf/tfidf.py	/^class TfIdf:$/;"	kind:class	line:8
 To	../amazonTwitter/lib/python3.5/importlib/_bootstrap_external.py	/^    import tokenize  # To avoid bootstrap issues.$/;"	kind:namespace	line:533
 To	../amazonTwitter/lib64/python3.5/importlib/_bootstrap_external.py	/^    import tokenize  # To avoid bootstrap issues.$/;"	kind:namespace	line:533
 ToASCII	../amazonTwitter/lib/python3.5/encodings/idna.py	/^def ToASCII(label):$/;"	kind:function	line:62
@@ -4699,6 +4700,7 @@ __init__	../amazonTwitter/lib64/python3.5/weakref.py	/^    def __init__(*args, *
 __init__	../amazonTwitter/lib64/python3.5/weakref.py	/^    def __init__(self, dict=None):$/;"	kind:member	line:354
 __init__	../amazonTwitter/lib64/python3.5/weakref.py	/^    def __init__(self, ob, callback, key):$/;"	kind:member	line:339
 __init__	../amazonTwitter/lib64/python3.5/weakref.py	/^    def __init__(self, obj, func, *args, **kwargs):$/;"	kind:member	line:526
+__init__	../tfidf/tfidf.py	/^    def __init__(self):$/;"	kind:member	line:9
 __init__	../twitter/tweeter.py	/^    def __init__(self):$/;"	kind:member	line:8
 __init__.py	../amazonTwitter/lib/python3.5/collections/__init__.py	1;"	kind:file	line:1
 __init__.py	../amazonTwitter/lib/python3.5/distutils/__init__.py	1;"	kind:file	line:1
@@ -5382,6 +5384,7 @@ _check_unpack_options	../amazonTwitter/lib/python3.5/shutil.py	/^def _check_unpa
 _check_unpack_options	../amazonTwitter/lib64/python3.5/shutil.py	/^def _check_unpack_options(extensions, function, extra_args):$/;"	kind:function	line:821
 _class_escape	../amazonTwitter/lib/python3.5/sre_parse.py	/^def _class_escape(source, escape):$/;"	kind:function	line:312
 _class_escape	../amazonTwitter/lib64/python3.5/sre_parse.py	/^def _class_escape(source, escape):$/;"	kind:function	line:312
+_clean_data	../tfidf/tfidf.py	/^    def _clean_data(self, lines):$/;"	kind:member	line:21
 _cleanup	../amazonTwitter/lib/python3.5/tempfile.py	/^    def _cleanup(cls, name, warn_message):$/;"	kind:member	line:796
 _cleanup	../amazonTwitter/lib64/python3.5/tempfile.py	/^    def _cleanup(cls, name, warn_message):$/;"	kind:member	line:796
 _clearcache	../amazonTwitter/lib/python3.5/struct.py	/^from _struct import _clearcache$/;"	kind:namespace	line:14
@@ -5808,6 +5811,7 @@ _load	../amazonTwitter/lib64/python3.5/importlib/_bootstrap.py	/^def _load(spec)
 _load	../amazonTwitter/lib64/python3.5/tarfile.py	/^    def _load(self):$/;"	kind:member	line:2337
 _load_backward_compatible	../amazonTwitter/lib/python3.5/importlib/_bootstrap.py	/^def _load_backward_compatible(spec):$/;"	kind:function	line:630
 _load_backward_compatible	../amazonTwitter/lib64/python3.5/importlib/_bootstrap.py	/^def _load_backward_compatible(spec):$/;"	kind:function	line:630
+_load_data	../tfidf/tfidf.py	/^    def _load_data(self):$/;"	kind:member	line:13
 _load_module_shim	../amazonTwitter/lib/python3.5/importlib/_bootstrap.py	/^def _load_module_shim(self, fullname):$/;"	kind:function	line:256
 _load_module_shim	../amazonTwitter/lib64/python3.5/importlib/_bootstrap.py	/^def _load_module_shim(self, fullname):$/;"	kind:function	line:256
 _load_unlocked	../amazonTwitter/lib/python3.5/importlib/_bootstrap.py	/^def _load_unlocked(spec):$/;"	kind:function	line:659
@@ -10112,6 +10116,7 @@ match	../amazonTwitter/lib/python3.5/re.py	/^def match(pattern, string, flags=0)
 match	../amazonTwitter/lib/python3.5/sre_parse.py	/^    def match(self, char):$/;"	kind:member	line:242
 match	../amazonTwitter/lib64/python3.5/re.py	/^def match(pattern, string, flags=0):$/;"	kind:function	line:160
 match	../amazonTwitter/lib64/python3.5/sre_parse.py	/^    def match(self, char):$/;"	kind:member	line:242
+math	../tfidf/tfidf.py	/^import math$/;"	kind:namespace	line:3
 matmul	../amazonTwitter/lib/python3.5/operator.py	/^def matmul(a, b):$/;"	kind:function	line:108
 matmul	../amazonTwitter/lib64/python3.5/operator.py	/^def matmul(a, b):$/;"	kind:function	line:108
 maybe	../amazonTwitter/lib/python3.5/tokenize.py	/^def maybe(*choices): return group(*choices) + '?'$/;"	kind:function	line:113
@@ -10603,6 +10608,7 @@ re	../amazonTwitter/lib64/python3.5/tokenize.py	/^import re$/;"	kind:namespace	l
 re	../amazonTwitter/lib64/python3.5/warnings.py	/^    import re$/;"	kind:namespace	line:111
 re	../amazonTwitter/lib64/python3.5/warnings.py	/^    import re$/;"	kind:namespace	line:148
 re	../amazonTwitter/lib64/python3.5/warnings.py	/^    import re$/;"	kind:namespace	line:50
+re	../tfidf/tfidf.py	/^import re$/;"	kind:namespace	line:2
 re.py	../amazonTwitter/lib/python3.5/re.py	1;"	kind:file	line:1
 re.py	../amazonTwitter/lib64/python3.5/re.py	1;"	kind:file	line:1
 read	../amazonTwitter/lib/python3.5/codecs.py	/^    def read(self, size=-1):$/;"	kind:member	line:696
@@ -11264,6 +11270,7 @@ tb	../amazonTwitter/lib/python3.5/types.py	/^    tb = None; del tb$/;"	kind:vari
 tb	../amazonTwitter/lib/python3.5/types.py	/^    tb = sys.exc_info()[2]$/;"	kind:variable	line:39
 tb	../amazonTwitter/lib64/python3.5/types.py	/^    tb = None; del tb$/;"	kind:variable	line:42
 tb	../amazonTwitter/lib64/python3.5/types.py	/^    tb = sys.exc_info()[2]$/;"	kind:variable	line:39
+tb	../tfidf/tfidf.py	/^from textblob import TextBlob as tb$/;"	kind:namespace	line:5
 tell	../amazonTwitter/lib/python3.5/sre_parse.py	/^    def tell(self):$/;"	kind:member	line:276
 tell	../amazonTwitter/lib/python3.5/tarfile.py	/^    def tell(self):$/;"	kind:member	line:499
 tell	../amazonTwitter/lib/python3.5/tarfile.py	/^    def tell(self):$/;"	kind:member	line:645
@@ -11284,6 +11291,9 @@ test	../amazonTwitter/lib/python3.5/base64.py	/^def test():$/;"	kind:function	li
 test	../amazonTwitter/lib64/python3.5/base64.py	/^def test():$/;"	kind:function	line:590
 textwrap	../amazonTwitter/lib/python3.5/site.py	/^        import textwrap$/;"	kind:namespace	line:753
 textwrap	../amazonTwitter/lib64/python3.5/site.py	/^        import textwrap$/;"	kind:namespace	line:753
+tf	../tfidf/tfidf.py	/^    def tf(word, blob):$/;"	kind:member	line:31
+tfIdf	../tfidf/tfidf.py	/^    tfIdf = TfIdf()$/;"	kind:variable	line:34
+tfidf.py	../tfidf/tfidf.py	1;"	kind:file	line:1
 the	../amazonTwitter/lib/python3.5/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	kind:namespace	line:5
 the	../amazonTwitter/lib/python3.5/encodings/bz2_codec.py	/^import bz2 # this codec needs the optional bz2 module !$/;"	kind:namespace	line:11
 the	../amazonTwitter/lib/python3.5/encodings/zlib_codec.py	/^import zlib # this codec needs the optional zlib module !$/;"	kind:namespace	line:9
