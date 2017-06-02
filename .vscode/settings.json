@@ -1,0 +1,14 @@
+{
+    "search.exclude": {
+        "amazonTwitter/": true,
+        "__pycache__/": true,
+        "# Don't Check in Credentials": true,
+        "config.py": true
+    },
+    "files.exclude": {
+        "amazonTwitter/": true,
+        "__pycache__/": true,
+        "# Don't Check in Credentials": true,
+        "config.py": true
+    }
+}
