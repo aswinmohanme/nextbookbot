@@ -8,7 +8,7 @@ class AmazonBooker:
         self.amazon = AmazonAPI(AWSACCESSKEY, AWSSECRETKEY, AMAZONSTORE)
 
     def get_book_by_name(self, name):
-        return random.choice(self.amazon.search_n(3 Keywords=name, SearchIndex='Books'))
+        return random.choice(self.amazon.search_n(3, Keywords=name, SearchIndex='Books'))
 
     def get_books_by_name(self, name, num):
         return self.amazon.search_n(num, Keywords=name, SearchIndex='Books')
