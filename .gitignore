@@ -2,5 +2,4 @@ amazonTwitter/
 __pycache__/
 
 # Don't Check in Credentials
-config.py
 tweet.json
