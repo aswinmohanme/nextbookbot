@@ -12,9 +12,8 @@ if __name__ == "__main__":
     def process_status(status):
         if status.lang == "en":
             with open('tweet.txt', 'a') as f:
-                f.write(status.text)
-                f.write('\n')
+                f.write(status.text + '\n')
 
     tweeter.create_stream(process_status)
-    tweeter.track_stream('read')
+    tweeter.track_stream(['books'])
 
