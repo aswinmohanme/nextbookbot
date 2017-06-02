@@ -13,14 +13,14 @@ if __name__ == "__main__":
     tweeter = Tweeter()
     Rake = RAKE.Rake('smartStop.txt')
 
-    tweet_body = ["Hey there @{} I just found this book {} that you would love to read",
-                  "Hey @{} since you like reading so much, Check out {}",
-                  "@{} I just read your last tweet and thought you would love {}"]
+    tweet_body = ["Hey there @{} I just found this book {} that you would love to read #books #read",
+                  "Hey @{} since you like reading so much, Check out {} #toread #read #books",
+                  "@{} I just read your last tweet and thought you would love {} #toread #books"]
 
     # Main Function CallBack
     def process_status(status):
         try:
-            if status.lang == "en":
+            if status.lang == "en" and status.user.screen_name != "abookme":
                 keywords = Rake.run(status.text.replace('#', ''))
                 book = amazonBooker.get_book_by_keywords(' or '.join([x[0] for x in keywords[:3]]))
 
