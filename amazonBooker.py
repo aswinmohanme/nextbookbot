@@ -14,5 +14,5 @@ class AmazonBooker:
         return self.amazon.search_n(num, Keywords=name, SearchIndex='Books')
 
     def get_book_by_keywords(self, kw):
-        return random.choice(self.amazon.search_n(10, Power=kw, SearchIndex='Books'))
+        return random.choice(self.amazon.search_n(3, Power=kw, SearchIndex='Books'))
     
