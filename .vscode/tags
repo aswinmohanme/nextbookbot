@@ -11380,7 +11380,7 @@ tuple_iterator	../amazonTwitter/lib/python3.5/_collections_abc.py	/^tuple_iterat
 tuple_iterator	../amazonTwitter/lib64/python3.5/_collections_abc.py	/^tuple_iterator = type(iter(()))$/;"	kind:variable	line:47
 tweepy	../twitter/bookListener.py	/^import tweepy$/;"	kind:namespace	line:2
 tweepy	../twitter/tweeter.py	/^import tweepy$/;"	kind:namespace	line:2
-tweet_body	../main.py	/^    tweet_body = ["Hey @{}I just found {} on {} that you would love #books ",$/;"	kind:variable	line:22
+tweet_body	../main.py	/^    tweet_body = ["Hey @{} I just found {} on {} that you would love #books ",$/;"	kind:variable	line:22
 tweeter	../main.py	/^    tweeter = Tweeter()$/;"	kind:variable	line:13
 tweeter.py	../twitter/tweeter.py	1;"	kind:file	line:1
 twitterConfig	../twitter/tweeter.py	/^from . import twitterConfig$/;"	kind:namespace	line:4
