@@ -33,7 +33,7 @@ if __name__ == "__main__":
                 keywords = Rake.run(status.text.replace('#', ''))
                 book = amazonBooker.get_book_by_keywords(' or '.join([x[0] for x in keywords[:2]]))
 
-                time.sleep(random.randrange(5,10))
+                time.sleep(random.randrange(60,120))
                 # Tweet to the User who Tweeted it 
                 status_txt = random.choice(tweet_body).format(status.user.screen_name, book.title[:20], book.offer_url)
 
