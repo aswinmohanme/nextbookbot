@@ -31,9 +31,9 @@ if __name__ == "__main__":
         try:
             if status.lang == "en" and status.user.screen_name not in users_tweeted: 
                 keywords = Rake.run(status.text.replace('#', ''))
-                book = amazonBooker.get_book_by_keywords(' or '.join([x[0] for x in keywords[:4]]))
+                book = amazonBooker.get_book_by_keywords(' or '.join([x[0] for x in keywords[:2]]))
 
-                time.sleep(random.randrange(60,120))
+                time.sleep(random.randrange(5,10))
                 # Tweet to the User who Tweeted it 
                 status_txt = random.choice(tweet_body).format(status.user.screen_name, book.title[:20], book.offer_url)
 
@@ -50,5 +50,5 @@ if __name__ == "__main__":
 
 
     tweeter.create_stream(process_status)
-    tweeter.track_stream(['books', '#books'])
+    tweeter.track_stream(['#suggestions', '#books'])
 
