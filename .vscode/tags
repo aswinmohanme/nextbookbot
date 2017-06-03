@@ -10338,8 +10338,9 @@ old_get_python_inc	../amazonTwitter/lib64/python3.5/distutils/__init__.py	/^old_
 old_get_python_lib	../amazonTwitter/lib/python3.5/distutils/__init__.py	/^old_get_python_lib = sysconfig.get_python_lib$/;"	kind:variable	line:82
 old_get_python_lib	../amazonTwitter/lib64/python3.5/distutils/__init__.py	/^old_get_python_lib = sysconfig.get_python_lib$/;"	kind:variable	line:82
 old_os_path	../amazonTwitter/bin/activate_this.py	/^old_os_path = os.environ.get('PATH', '')$/;"	kind:variable	line:16
-on_error	../twitter/bookListener.py	/^    def on_error(self, status_code):$/;"	kind:member	line:14
-on_status	../twitter/bookListener.py	/^    def on_status(self, status):$/;"	kind:member	line:11
+on_	../twitter/bookListener.py	/^    def on_$/;"	kind:member	line:11
+on_error	../twitter/bookListener.py	/^    def on_error(self, status_code):$/;"	kind:member	line:16
+on_status	../twitter/bookListener.py	/^    def on_status(self, status):$/;"	kind:member	line:13
 onceregistry	../amazonTwitter/lib/python3.5/warnings.py	/^    onceregistry = _onceregistry$/;"	kind:variable	line:409
 onceregistry	../amazonTwitter/lib/python3.5/warnings.py	/^    onceregistry = {}$/;"	kind:variable	line:414
 onceregistry	../amazonTwitter/lib64/python3.5/warnings.py	/^    onceregistry = _onceregistry$/;"	kind:variable	line:409
