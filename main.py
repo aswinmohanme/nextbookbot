@@ -19,7 +19,7 @@ if __name__ == "__main__":
     #               "Hey @{} Thought you would #love {} #books #fead",
     #               "Hey @{} Check out this awesome book that you will love {} #books",
     #               "Hey @{} I am thinking you would #love {} #books"]
-    tweet_body = ["Hey @{}I just found {} on {} that you would love #books ",
+    tweet_body = ["Hey @{} I just found {} on {} that you would love #books ",
                   "Hey @{} since you like reading, Check {} on {} #books",
                   "@{} I think you will love {} on {} #toread #books",
                   "Hey @{} I bet you will fall in #love with {} on {} #books ",
