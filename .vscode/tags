@@ -3168,10 +3168,10 @@ SystemRandom	../amazonTwitter/lib/python3.5/random.py	/^class SystemRandom(Rando
 SystemRandom	../amazonTwitter/lib64/python3.5/random.py	/^class SystemRandom(Random):$/;"	kind:class	line:648
 T	../amazonTwitter/lib/python3.5/encodings/punycode.py	/^def T(j, bias):$/;"	kind:function	line:70
 T	../amazonTwitter/lib64/python3.5/encodings/punycode.py	/^def T(j, bias):$/;"	kind:function	line:70
-TACCESSTOKEN	../twitter/twitterConfig.py	/^TACCESSTOKEN = "870288320789479424-MpzD2RHk8fRVNiYJW6ooPpVFwyt0sLm"$/;"	kind:variable	line:5
-TACCESSTOKENSECRET	../twitter/twitterConfig.py	/^TACCESSTOKENSECRET = "8LHGut8S8F9IMpjdqsmMGLQL2zlJLTjl6yuhT615hUabC"$/;"	kind:variable	line:6
-TCONSUMERKEY	../twitter/twitterConfig.py	/^TCONSUMERKEY = "LtR81FJwu7mS1o3uwJcRmSV8y"$/;"	kind:variable	line:3
-TCONSUMERSECRET	../twitter/twitterConfig.py	/^TCONSUMERSECRET = "JbHCFCKfyMwsfnMin2cDotmrfHoLLZUTkIKFYhOfIWM3jFFSuN"$/;"	kind:variable	line:4
+TACCESSTOKEN	../twitter/twitterConfig.py	/^TACCESSTOKEN = "870967067603750912-zraOw0tEfWLa1yM4gOSf5h5Alv85ehG"$/;"	kind:variable	line:5
+TACCESSTOKENSECRET	../twitter/twitterConfig.py	/^TACCESSTOKENSECRET = "PzSd97d9gt9fwtR0oK3v182iSOuvHbdZjDMGdwJWqveq7"$/;"	kind:variable	line:6
+TCONSUMERKEY	../twitter/twitterConfig.py	/^TCONSUMERKEY = "39f8go4ZUdYmToKMVWfUUTjzZ"$/;"	kind:variable	line:3
+TCONSUMERSECRET	../twitter/twitterConfig.py	/^TCONSUMERSECRET = "MvTZEUDmLvrfLAstwF4PfPzujXAyONjCXmPRu6SIaDeDrGapj9"$/;"	kind:variable	line:4
 TILDE	../amazonTwitter/lib/python3.5/token.py	/^TILDE = 31$/;"	kind:variable	line:44
 TILDE	../amazonTwitter/lib64/python3.5/token.py	/^TILDE = 31$/;"	kind:variable	line:44
 TIMEOUT_MAX	../amazonTwitter/lib/python3.5/_dummy_thread.py	/^TIMEOUT_MAX = 2**31$/;"	kind:variable	line:20
@@ -9140,6 +9140,7 @@ get_magic	../amazonTwitter/lib/python3.5/imp.py	/^def get_magic():$/;"	kind:func
 get_magic	../amazonTwitter/lib64/python3.5/imp.py	/^def get_magic():$/;"	kind:function	line:59
 get_platform	../amazonTwitter/lib/python3.5/site.py	/^    from distutils.util import get_platform$/;"	kind:namespace	line:136
 get_platform	../amazonTwitter/lib64/python3.5/site.py	/^    from distutils.util import get_platform$/;"	kind:namespace	line:136
+get_similar_books	../amazonBooker.py	/^    def get_similar_books(self, name, num):$/;"	kind:member	line:19
 get_source	../amazonTwitter/lib/python3.5/importlib/_bootstrap.py	/^    def get_source(cls, fullname):$/;"	kind:member	line:758
 get_source	../amazonTwitter/lib/python3.5/importlib/_bootstrap.py	/^    def get_source(cls, fullname):$/;"	kind:member	line:835
 get_source	../amazonTwitter/lib/python3.5/importlib/_bootstrap_external.py	/^    def get_source(self, fullname):$/;"	kind:member	line:1042
@@ -10338,9 +10339,8 @@ old_get_python_inc	../amazonTwitter/lib64/python3.5/distutils/__init__.py	/^old_
 old_get_python_lib	../amazonTwitter/lib/python3.5/distutils/__init__.py	/^old_get_python_lib = sysconfig.get_python_lib$/;"	kind:variable	line:82
 old_get_python_lib	../amazonTwitter/lib64/python3.5/distutils/__init__.py	/^old_get_python_lib = sysconfig.get_python_lib$/;"	kind:variable	line:82
 old_os_path	../amazonTwitter/bin/activate_this.py	/^old_os_path = os.environ.get('PATH', '')$/;"	kind:variable	line:16
-on_	../twitter/bookListener.py	/^    def on_$/;"	kind:member	line:11
-on_error	../twitter/bookListener.py	/^    def on_error(self, status_code):$/;"	kind:member	line:16
-on_status	../twitter/bookListener.py	/^    def on_status(self, status):$/;"	kind:member	line:13
+on_error	../twitter/bookListener.py	/^    def on_error(self, status_code):$/;"	kind:member	line:14
+on_status	../twitter/bookListener.py	/^    def on_status(self, status):$/;"	kind:member	line:11
 onceregistry	../amazonTwitter/lib/python3.5/warnings.py	/^    onceregistry = _onceregistry$/;"	kind:variable	line:409
 onceregistry	../amazonTwitter/lib/python3.5/warnings.py	/^    onceregistry = {}$/;"	kind:variable	line:414
 onceregistry	../amazonTwitter/lib64/python3.5/warnings.py	/^    onceregistry = _onceregistry$/;"	kind:variable	line:409
@@ -10520,7 +10520,7 @@ prf	../amazonTwitter/lib/python3.5/hashlib.py	/^        def prf(msg, inner=inner
 prf	../amazonTwitter/lib64/python3.5/hashlib.py	/^        def prf(msg, inner=inner, outer=outer):$/;"	kind:function	line:203
 print_function	../amazonTwitter/lib/python3.5/__future__.py	/^print_function = _Feature((2, 6, 0, "alpha", 2),$/;"	kind:variable	line:126
 print_function	../amazonTwitter/lib64/python3.5/__future__.py	/^print_function = _Feature((2, 6, 0, "alpha", 2),$/;"	kind:variable	line:126
-process_status	../main.py	/^    def process_status(status):$/;"	kind:function	line:30
+process_status	../main.py	/^    def process_status(status):$/;"	kind:function	line:23
 ptcp154.py	../amazonTwitter/lib/python3.5/encodings/ptcp154.py	1;"	kind:file	line:1
 ptcp154.py	../amazonTwitter/lib64/python3.5/encodings/ptcp154.py	1;"	kind:file	line:1
 punycode.py	../amazonTwitter/lib/python3.5/encodings/punycode.py	1;"	kind:file	line:1
@@ -11381,7 +11381,7 @@ tuple_iterator	../amazonTwitter/lib/python3.5/_collections_abc.py	/^tuple_iterat
 tuple_iterator	../amazonTwitter/lib64/python3.5/_collections_abc.py	/^tuple_iterator = type(iter(()))$/;"	kind:variable	line:47
 tweepy	../twitter/bookListener.py	/^import tweepy$/;"	kind:namespace	line:2
 tweepy	../twitter/tweeter.py	/^import tweepy$/;"	kind:namespace	line:2
-tweet_body	../main.py	/^    tweet_body = ["Hey @{} I just found {} on {} that you would love #books ",$/;"	kind:variable	line:22
+tweet_body	../main.py	/^    tweet_body = ["Hey @{} try {} on {} #books #suggest",$/;"	kind:variable	line:15
 tweeter	../main.py	/^    tweeter = Tweeter()$/;"	kind:variable	line:13
 tweeter.py	../twitter/tweeter.py	1;"	kind:file	line:1
 twitterConfig	../twitter/tweeter.py	/^from . import twitterConfig$/;"	kind:namespace	line:4
@@ -11449,7 +11449,6 @@ use	../amazonTwitter/lib/python3.5/distutils/__init__.py	/^import opcode # opcod
 use	../amazonTwitter/lib64/python3.5/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	kind:namespace	line:5
 usercustomize	../amazonTwitter/lib/python3.5/site.py	/^        import usercustomize$/;"	kind:namespace	line:663
 usercustomize	../amazonTwitter/lib64/python3.5/site.py	/^        import usercustomize$/;"	kind:namespace	line:663
-users_tweeted	../main.py	/^    users_tweeted = ["abookme"]$/;"	kind:variable	line:15
 utf_16.py	../amazonTwitter/lib/python3.5/encodings/utf_16.py	1;"	kind:file	line:1
 utf_16.py	../amazonTwitter/lib64/python3.5/encodings/utf_16.py	1;"	kind:file	line:1
 utf_16_be.py	../amazonTwitter/lib/python3.5/encodings/utf_16_be.py	1;"	kind:file	line:1
