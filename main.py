@@ -24,7 +24,7 @@ if __name__ == "__main__":
         try:
             if status.lang == "en":
                 keywords = Rake.run(status.text.replace('#', '').replace('@nextbookbot', ''))
-                books = amazonBooker.get_similar_books(' '.join([x[0] for x in keywords[:4]]), 4)
+                books = amazonBooker.get_similar_books(' '.join([x[0] for x in keywords[:4]]), 3)
                 book = random.choice(books)
 
                 # Tweet to the User who Tweeted it 
@@ -37,7 +37,8 @@ if __name__ == "__main__":
                     log.write('\n')
 
         except amazon.api.SearchException:
-            tweeter.update_status("Hey @{} I can't find that Book, it must be me ,can you try once more with the exact name of the book?".format(status.user.screen_name))
+            status_txt = "Hey @{} I can't find that Book, it must be me ,can you try once more with the exact name of the book?".format(status.user.screen_name)
+            tweeter.update_status(status_txt, status.id)
 
 
     tweeter.create_stream(process_status)
