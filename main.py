@@ -37,7 +37,8 @@ if __name__ == "__main__":
                     log.write('\n')
 
         except amazon.api.SearchException:
-            status_txt = "Hey @{} I can't find that Book, it must be me ,can you try once more with the exact name of the book?".format(status.user.screen_name)
+            status_txt = "Hey @{} I can't find, it must be me, can you do it once more ?".format(status.user.screen_name)
+            print(status_txt)
             tweeter.update_status(status_txt, status.id)
 
 
