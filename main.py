@@ -14,9 +14,9 @@ if __name__ == "__main__":
     Rake = RAKE.Rake('smartStop.txt')
     tweet_body = ["Hey @{} try {} on {} #books #suggest",
                  "Hey @{} Checkout {} on {} #books #suggest",
-                 "Hey @{} This seems #interesting {} on {} #books #suggest #books",
-                 "Hey @{} just found this {} on {} for #you #suggest #books",
-                 "Hey @{} thinking about giving {} at {} a #try #suggest #books"
+                 "Hey @{} This seems #interesting {} on {} #books #suggest",
+                 "Hey @{} just found this {} on {} for #you #suggest",
+                 "Hey @{} thinking about giving {} at {} a #try #suggest "
                  ]
 
     # Main Function CallBack

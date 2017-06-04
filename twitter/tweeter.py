@@ -23,11 +23,7 @@ class Tweeter:
 
     # Send A Tweet
     def update_status(self, status, reply_id):
-        if len(status) > 140:
-            print("The Length of Status Must be less than 140")
-            return None
-
-        self.api.update_status(status, in_reply_to_status_id=reply_id)
+        self.api.update_status(status[:139], in_reply_to_status_id=reply_id)
     
     # Return a List of Tweets for a given hash tag
     def get_tweets_from_hashtag(self, hashtag, limit=None):
